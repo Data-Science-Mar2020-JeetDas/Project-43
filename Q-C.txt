@@ -1,0 +1,140 @@
+# -*- coding: utf-8 -*-
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import random
+import pandas
+
+
+df = pd.read_csv("C:/Users/Jeet Das/Desktop/43.csv",encoding="utf-8")
+
+print("\n----------------------- output data :---------------------\n")
+print("Project - 43 ");
+print("\n------------------------------------------------------------\n")
+
+
+# Question – A : get row and column numbers 
+
+print('---------------------------------------------')
+print("Dimension of the data frame = ",df.shape)
+print('---------------------------------------------')
+
+----------------------- output data :---------------------
+
+Project - 43 
+
+------------------------------------------------------------
+
+---------------------------------------------
+Dimension of the data frame =  (2814, 4)
+---------------------------------------------
+
+# Question – B : print column names :
+
+print('------------------------\n Column names as follows :')
+print('------------------------\n')
+count = 0
+for col in df.columns: 
+        print(count,"-->",col)
+        count = count+1
+print("\n-----------------------------\n")
+------------------------
+ Column names as follows :
+------------------------
+
+0 --> Location
+1 --> Indicator
+2 --> Period
+3 --> First Tooltip
+
+-----------------------------
+
+
+# Question - C : print available country
+
+country = df.groupby(['Location'])[['Period']].count()
+print("---------------------------------")
+print("\tAvailable country names : ")
+print("-------------------------------")
+print(country)
+print("-------------------------------")
+count = 0
+for row in range(len(country)): 
+        count = count+1
+print("total no. of country = ",count)        
+print("-----------------------------\n")
+
+
+---------------------------------
+        Available country names : 
+-------------------------------
+                                                    Period
+Location                                                  
+Afghanistan                                             10
+Albania                                                 10
+Algeria                                                 11
+Andorra                                                 21
+Angola                                                  12
+Antigua and Barbuda                                     18
+Argentina                                               21
+Armenia                                                  9
+Australia                                               22
+Austria                                                 20
+Azerbaijan                                               8
+Bahamas                                                 20
+Bahrain                                                 21
+Bangladesh                                              10
+Barbados                                                18
+Belarus                                                 10
+Belgium                                                 26
+Belize                                                  18
+Benin                                                   14
+Bhutan                                                   7
+Bolivia (Plurinational State of)                        19
+Bosnia and Herzegovina                                  15
+Botswana                                                 8
+Brazil                                                  19
+Brunei Darussalam                                       17
+Bulgaria                                                 9
+Burkina Faso                                            13
+Burundi                                                 15
+Cabo Verde                                               8
+Cambodia                                                 9
+                                                   ...
+Sudan                                                    8
+Sudan (until 2011)                                       3
+Suriname                                                14
+Sweden                                                  28
+Switzerland                                             21
+Syrian Arab Republic                                    18
+Tajikistan                                              11
+The former Yugoslav Republic of Macedonia               11
+Timor-Leste                                              6
+Togo                                                    11
+Tonga                                                   14
+Trinidad and Tobago                                     21
+Tunisia                                                 11
+Turkey                                                  12
+Turkmenistan                                             9
+Tuvalu                                                  10
+Uganda                                                  17
+Ukraine                                                 13
+United Arab Emirates                                    20
+United Kingdom of Great Britain and Northern Ir...      26
+United Republic of Tanzania                             10
+United States of America                                24
+Uruguay                                                 22
+Uzbekistan                                              10
+Vanuatu                                                  8
+Venezuela (Bolivarian Republic of)                      19
+Viet Nam                                                 9
+Yemen                                                   14
+Zambia                                                  15
+Zimbabwe                                                11
+
+[192 rows x 1 columns]
+-------------------------------
+total no. of country =  192
+-----------------------------
+
