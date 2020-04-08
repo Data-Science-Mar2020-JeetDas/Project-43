@@ -1,0 +1,386 @@
+#******************* Question - :plot-6: 20-23 (2015-2018) :  ********************
+
+
+df1 = df[df.Period == 2015]
+print("\n\n--------------[ OUTPUT for 2015 ]----------------------\n\n")
+print(df1[['Location','Period','First Tooltip']])
+
+df2 = df[df.Period == 2016]
+print("\n\n--------------[ OUTPUT for 2016 ]----------------------\n\n")
+print(df2[['Location','Period','First Tooltip']])
+
+df3 = df[df.Period == 2017]
+print("\n\n--------------[ OUTPUT for 2017 ]----------------------\n\n")
+print(df3[['Location','Period','First Tooltip']])
+
+df4 = df[df.Period == 2018]
+print("\n\n--------------[ OUTPUT for 2018 ]----------------------\n\n")
+print(df4[['Location','Period','First Tooltip']])
+
+i = np.arange(len(df1['Location']))
+print(i)
+
+i1 = np.arange(len(df2['Location']))
+print(i1)
+
+i2 = np.arange(len(df3['Location']))
+print(i2)
+
+i3 = np.arange(len(df4['Location']))
+print(i3)
+
+#--------------- plot ----------------------
+
+plt.title('Question - : slot-6 : 2015-2018')
+plt.xlabel("Country sl. no --- >")
+plt.ylabel("Number(%) --- >")
+
+plt.plot(i,df1['First Tooltip'],
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] 2015")
+
+plt.plot(i1,df2['First Tooltip'],
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] 2016")
+
+plt.plot(i2,df3['First Tooltip'],
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] 2017")
+
+plt.plot(i3,df4['First Tooltip'],
+            marker='o',
+            markersize=10,
+            linestyle='dashed',
+            label="[4] 2018")
+
+plt.legend()
+plt.show()
+
+
+
+
+
+--------------[ OUTPUT for 2015 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+3                                           Afghanistan    2015             65
+13                                              Albania    2015             99
+23                                              Algeria    2015             95
+34                                              Andorra    2015             97
+55                                               Angola    2015             55
+67                                  Antigua and Barbuda    2015             99
+85                                            Argentina    2015             94
+106                                             Armenia    2015             94
+115                                           Australia    2015             93
+137                                             Austria    2015             93
+157                                          Azerbaijan    2015             96
+165                                             Bahamas    2015             95
+185                                             Bahrain    2015             98
+206                                          Bangladesh    2015             98
+216                                            Barbados    2015             97
+234                                             Belarus    2015              9
+244                                             Belgium    2015             98
+270                                              Belize    2015             94
+288                                               Benin    2015             74
+302                                              Bhutan    2015             99
+309                    Bolivia (Plurinational State of)    2015             89
+328                              Bosnia and Herzegovina    2015             78
+343                                            Botswana    2015             95
+351                                              Brazil    2015             96
+370                                   Brunei Darussalam    2015             99
+387                                            Bulgaria    2015             87
+396                                        Burkina Faso    2015             91
+409                                             Burundi    2015             94
+424                                          Cabo Verde    2015             94
+432                                            Cambodia    2015             92
+                                                ...     ...            ...
+2382                                          Sri Lanka    2015             99
+2391                                              Sudan    2015             93
+2402                                           Suriname    2015             89
+2416                                             Sweden    2015             98
+2444                                        Switzerland    2015             95
+2465                               Syrian Arab Republic    2015             41
+2483                                         Tajikistan    2015             96
+2494          The former Yugoslav Republic of Macedonia    2015             89
+2505                                        Timor-Leste    2015             76
+2511                                               Togo    2015             88
+2522                                              Tonga    2015             78
+2536                                Trinidad and Tobago    2015             90
+2557                                            Tunisia    2015             98
+2568                                             Turkey    2015             97
+2580                                       Turkmenistan    2015             99
+2589                                             Tuvalu    2015             96
+2599                                             Uganda    2015             89
+2616                                            Ukraine    2015             38
+2629                               United Arab Emirates    2015             99
+2649  United Kingdom of Great Britain and Northern I...    2015             95
+2675                        United Republic of Tanzania    2015             98
+2685                           United States of America    2015             93
+2709                                            Uruguay    2015             95
+2731                                         Uzbekistan    2015             99
+2741                                            Vanuatu    2015             80
+2749                 Venezuela (Bolivarian Republic of)    2015             87
+2768                                           Viet Nam    2015             97
+2777                                              Yemen    2015             69
+2791                                             Zambia    2015             90
+2806                                           Zimbabwe    2015             87
+
+[191 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2016 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+2                                           Afghanistan    2016             66
+12                                              Albania    2016             98
+22                                              Algeria    2016             91
+33                                              Andorra    2016             98
+54                                               Angola    2016             55
+66                                  Antigua and Barbuda    2016             92
+84                                            Argentina    2016             92
+105                                             Armenia    2016             94
+114                                           Australia    2016             94
+136                                             Austria    2016             87
+156                                          Azerbaijan    2016             97
+164                                             Bahamas    2016             94
+184                                             Bahrain    2016             99
+205                                          Bangladesh    2016             98
+215                                            Barbados    2016             97
+233                                             Belarus    2016             11
+243                                             Belgium    2016             97
+269                                              Belize    2016             95
+287                                               Benin    2016             76
+301                                              Bhutan    2016             98
+308                    Bolivia (Plurinational State of)    2016             87
+327                              Bosnia and Herzegovina    2016             69
+342                                            Botswana    2016             95
+350                                              Brazil    2016             89
+369                                   Brunei Darussalam    2016             99
+386                                            Bulgaria    2016             92
+395                                        Burkina Faso    2016             91
+408                                             Burundi    2016             94
+423                                          Cabo Verde    2016             96
+431                                            Cambodia    2016             93
+                                                ...     ...            ...
+2381                                          Sri Lanka    2016             99
+2390                                              Sudan    2016             93
+2401                                           Suriname    2016             91
+2415                                             Sweden    2016             98
+2443                                        Switzerland    2016             95
+2464                               Syrian Arab Republic    2016             42
+2482                                         Tajikistan    2016             97
+2493          The former Yugoslav Republic of Macedonia    2016             94
+2504                                        Timor-Leste    2016             79
+2510                                               Togo    2016             89
+2521                                              Tonga    2016             78
+2535                                Trinidad and Tobago    2016             97
+2556                                            Tunisia    2016             98
+2567                                             Turkey    2016             98
+2579                                       Turkmenistan    2016             98
+2588                                             Tuvalu    2016             94
+2598                                             Uganda    2016             93
+2615                                            Ukraine    2016             47
+2628                               United Arab Emirates    2016             99
+2648  United Kingdom of Great Britain and Northern I...    2016             94
+2674                        United Republic of Tanzania    2016             97
+2684                           United States of America    2016             93
+2708                                            Uruguay    2016             95
+2730                                         Uzbekistan    2016             99
+2740                                            Vanuatu    2016             81
+2748                 Venezuela (Bolivarian Republic of)    2016             84
+2767                                           Viet Nam    2016             96
+2776                                              Yemen    2016             71
+2790                                             Zambia    2016             91
+2805                                           Zimbabwe    2016             90
+
+[191 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2017 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+1                                           Afghanistan    2017             66
+11                                              Albania    2017             99
+21                                              Algeria    2017             91
+32                                              Andorra    2017             99
+53                                               Angola    2017             52
+65                                  Antigua and Barbuda    2017             95
+83                                            Argentina    2017             86
+104                                             Armenia    2017             94
+113                                           Australia    2017             94
+135                                             Austria    2017             90
+155                                          Azerbaijan    2017             95
+163                                             Bahamas    2017             94
+183                                             Bahrain    2017             97
+204                                          Bangladesh    2017             98
+214                                            Barbados    2017             90
+232                                             Belarus    2017              9
+242                                             Belgium    2017             97
+268                                              Belize    2017             88
+286                                               Benin    2017             76
+300                                              Bhutan    2017             98
+307                    Bolivia (Plurinational State of)    2017             84
+326                              Bosnia and Herzegovina    2017             68
+341                                            Botswana    2017             95
+349                                              Brazil    2017             93
+368                                   Brunei Darussalam    2017             99
+385                                            Bulgaria    2017             92
+394                                        Burkina Faso    2017             91
+407                                             Burundi    2017             91
+422                                          Cabo Verde    2017             97
+430                                            Cambodia    2017             93
+                                                ...     ...            ...
+2380                                          Sri Lanka    2017             99
+2389                                              Sudan    2017             95
+2400                                           Suriname    2017             81
+2414                                             Sweden    2017             97
+2442                                        Switzerland    2017             95
+2463                               Syrian Arab Republic    2017             48
+2481                                         Tajikistan    2017             96
+2492          The former Yugoslav Republic of Macedonia    2017             91
+2503                                        Timor-Leste    2017             83
+2509                                               Togo    2017             90
+2520                                              Tonga    2017             81
+2534                                Trinidad and Tobago    2017             89
+2555                                            Tunisia    2017             98
+2566                                             Turkey    2017             96
+2578                                       Turkmenistan    2017             99
+2587                                             Tuvalu    2017             96
+2597                                             Uganda    2017             94
+2614                                            Ukraine    2017             39
+2627                               United Arab Emirates    2017             98
+2647  United Kingdom of Great Britain and Northern I...    2017             94
+2673                        United Republic of Tanzania    2017             97
+2683                           United States of America    2017             93
+2707                                            Uruguay    2017             93
+2729                                         Uzbekistan    2017             99
+2739                                            Vanuatu    2017             85
+2747                 Venezuela (Bolivarian Republic of)    2017             66
+2766                                           Viet Nam    2017             94
+2775                                              Yemen    2017             68
+2789                                             Zambia    2017             94
+2804                                           Zimbabwe    2017             89
+
+[191 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2018 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+0                                           Afghanistan    2018             66
+10                                              Albania    2018             99
+20                                              Algeria    2018             91
+31                                              Andorra    2018             99
+52                                               Angola    2018             59
+64                                  Antigua and Barbuda    2018             95
+82                                            Argentina    2018             86
+103                                             Armenia    2018             92
+112                                           Australia    2018             94
+134                                             Austria    2018             85
+154                                          Azerbaijan    2018             95
+162                                             Bahamas    2018             90
+182                                             Bahrain    2018             99
+203                                          Bangladesh    2018             98
+213                                            Barbados    2018             95
+231                                             Belarus    2018              9
+241                                             Belgium    2018             97
+267                                              Belize    2018             96
+285                                               Benin    2018             76
+299                                              Bhutan    2018             97
+306                    Bolivia (Plurinational State of)    2018             83
+325                              Bosnia and Herzegovina    2018             62
+340                                            Botswana    2018             95
+348                                              Brazil    2018             83
+367                                   Brunei Darussalam    2018             99
+384                                            Bulgaria    2018             92
+393                                        Burkina Faso    2018             91
+406                                             Burundi    2018             90
+421                                          Cabo Verde    2018             99
+429                                            Cambodia    2018             92
+                                                ...     ...            ...
+2379                                          Sri Lanka    2018             99
+2388                                              Sudan    2018             93
+2399                                           Suriname    2018             95
+2413                                             Sweden    2018             97
+2441                                        Switzerland    2018             95
+2462                               Syrian Arab Republic    2018             48
+2480                                         Tajikistan    2018             96
+2491          The former Yugoslav Republic of Macedonia    2018             91
+2502                                        Timor-Leste    2018             83
+2508                                               Togo    2018             88
+2519                                              Tonga    2018             81
+2533                                Trinidad and Tobago    2018             99
+2554                                            Tunisia    2018             97
+2565                                             Turkey    2018             98
+2577                                       Turkmenistan    2018             99
+2586                                             Tuvalu    2018             89
+2596                                             Uganda    2018             93
+2613                                            Ukraine    2018             39
+2626                               United Arab Emirates    2018             99
+2646  United Kingdom of Great Britain and Northern I...    2018             94
+2672                        United Republic of Tanzania    2018             98
+2682                           United States of America    2018             92
+2706                                            Uruguay    2018             91
+2728                                         Uzbekistan    2018             98
+2738                                            Vanuatu    2018             85
+2746                 Venezuela (Bolivarian Republic of)    2018             60
+2765                                           Viet Nam    2018             75
+2774                                              Yemen    2018             65
+2788                                             Zambia    2018             90
+2803                                           Zimbabwe    2018             89
+
+[191 rows x 3 columns]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106 107
+ 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125
+ 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143
+ 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161
+ 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179
+ 180 181 182 183 184 185 186 187 188 189 190]
