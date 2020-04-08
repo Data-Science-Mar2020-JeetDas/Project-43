@@ -1,0 +1,336 @@
+
+#******************* Question - :Plot-2: 4-7 :1999-2002  ********************
+
+
+df1 = df[df.Period == 1999]
+print("\n\n--------------[ OUTPUT for 1999 ]----------------------\n\n")
+print(df1[['Location','Period','First Tooltip']])
+
+df2 = df[df.Period == 2000]
+print("\n\n--------------[ OUTPUT for 2000 ]----------------------\n\n")
+print(df2[['Location','Period','First Tooltip']])
+
+df3 = df[df.Period == 2001]
+print("\n\n--------------[ OUTPUT for 2001 ]----------------------\n\n")
+print(df3[['Location','Period','First Tooltip']])
+
+df4 = df[df.Period == 2002]
+print("\n\n--------------[ OUTPUT for 2002 ]----------------------\n\n")
+print(df4[['Location','Period','First Tooltip']])
+
+i = np.arange(len(df1['Location']))
+print(i)
+
+i1 = np.arange(len(df2['Location']))
+print(i1)
+
+i2 = np.arange(len(df3['Location']))
+print(i2)
+
+i3 = np.arange(len(df4['Location']))
+print(i3)
+
+#--------------- plot for slot-2 ----------------------
+
+plt.title('Question - : slot-2 : 1999-2002')
+plt.xlabel("Country sl. no --- >")
+plt.ylabel("Number(%) --- >")
+
+plt.plot(i,df1['First Tooltip'],
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] 1999")
+
+plt.plot(i1,df2['First Tooltip'],
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] 2000")
+
+plt.plot(i2,df3['First Tooltip'],
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] 2001")
+
+plt.plot(i3,df4['First Tooltip'],
+            marker='o',
+            markersize=10,
+            linestyle='dashed',
+            label="[4] 2002")
+
+
+plt.legend()
+plt.show()
+
+
+
+--------------[ OUTPUT for 1999 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+50                                              Andorra    1999             80
+101                                           Argentina    1999             86
+131                                           Australia    1999             87
+153                                             Austria    1999             74
+181                                             Bahamas    1999             78
+201                                             Bahrain    1999             96
+260                                             Belgium    1999             59
+467                                              Canada    1999             88
+511                                               Chile    1999             95
+534                                            Colombia    1999             64
+585                                          Costa Rica    1999             68
+633                                                Cuba    1999             99
+706                                             Denmark    1999             95
+866                                                Fiji    1999             98
+888                                             Finland    1999             96
+915                                              France    1999             85
+945                                              Gambia    1999             94
+975                                             Germany    1999             92
+1020                                             Greece    1999             88
+1141                                            Hungary    1999             99
+1161                                            Iceland    1999             98
+1212                                            Ireland    1999             86
+1234                                             Israel    1999             93
+1359                                             Kuwait    1999             94
+1398                                             Latvia    1999             76
+1472                                          Lithuania    1999              2
+1492                                         Luxembourg    1999             91
+1577                                              Malta    1999             91
+1661                   Micronesia (Federated States of)    1999             40
+1681                                             Monaco    1999             99
+1783                                        Netherlands    1999             96
+1805                                        New Zealand    1999             88
+1827                                          Nicaragua    1999             80
+1883                                             Norway    1999             94
+1933                                              Palau    1999             96
+1998                                               Peru    1999             28
+2042                                           Portugal    1999             91
+2063                                              Qatar    1999             92
+2188                                         San Marino    1999             95
+2296                                           Slovakia    1999             47
+2377                                              Spain    1999             82
+2432                                             Sweden    1999             98
+2460                                        Switzerland    1999             91
+2552                                Trinidad and Tobago    1999             49
+2645                               United Arab Emirates    1999             94
+2665  United Kingdom of Great Britain and Northern I...    1999             92
+2701                           United States of America    1999             94
+2725                                            Uruguay    1999             91
+
+
+--------------[ OUTPUT for 2000 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+49                                              Andorra    2000             90
+100                                           Argentina    2000             83
+130                                           Australia    2000             90
+152                                             Austria    2000             72
+180                                             Bahamas    2000             90
+200                                             Bahrain    2000             97
+259                                             Belgium    2000             86
+324                    Bolivia (Plurinational State of)    2000             77
+366                                              Brazil    2000             90
+466                                              Canada    2000             88
+510                                               Chile    2000             91
+533                                            Colombia    2000             65
+584                                          Costa Rica    2000             92
+632                                                Cuba    2000             99
+652                                              Cyprus    2000             32
+705                                             Denmark    2000             95
+865                                                Fiji    2000             98
+887                                             Finland    2000             96
+914                                              France    2000             86
+944                                              Gambia    2000             90
+974                                             Germany    2000             94
+1019                                             Greece    2000             87
+1044                                            Grenada    2000             33
+1121                                           Honduras    2000             93
+1140                                            Hungary    2000             99
+1160                                            Iceland    2000             98
+1211                                            Ireland    2000             85
+1233                                             Israel    2000             93
+1258                                              Italy    2000             55
+1358                                             Kuwait    2000             98
+1397                                             Latvia    2000             79
+1471                                          Lithuania    2000              2
+1491                                         Luxembourg    2000             93
+1576                                              Malta    2000             93
+1599                                   Marshall Islands    2000             45
+1641                                             Mexico    2000             97
+1660                   Micronesia (Federated States of)    2000             75
+1680                                             Monaco    2000             99
+1782                                        Netherlands    2000             96
+1804                                        New Zealand    2000             90
+1826                                          Nicaragua    2000             83
+1863                                               Niue    2000             99
+1882                                             Norway    2000             93
+1932                                              Palau    2000             96
+1997                                               Peru    2000             43
+2041                                           Portugal    2000             86
+2062                                              Qatar    2000             80
+2124                              Saint Kitts and Nevis    2000             12
+2187                                         San Marino    2000             95
+2295                                           Slovakia    2000             59
+2353                                       South Africa    2000             73
+2376                                              Spain    2000             92
+2431                                             Sweden    2000             98
+2459                                        Switzerland    2000             91
+2551                                Trinidad and Tobago    2000             74
+2644                               United Arab Emirates    2000             92
+2664  United Kingdom of Great Britain and Northern I...    2000             91
+2700                           United States of America    2000             93
+2724                                            Uruguay    2000             88
+2764                 Venezuela (Bolivarian Republic of)    2000              2
+
+
+--------------[ OUTPUT for 2001 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+48                                              Andorra    2001             92
+81                                  Antigua and Barbuda    2001             97
+99                                            Argentina    2001             83
+129                                           Australia    2001             95
+151                                             Austria    2001             74
+179                                             Bahamas    2001             99
+199                                             Bahrain    2001             99
+230                                            Barbados    2001             18
+258                                             Belgium    2001             86
+284                                              Belize    2001             96
+323                    Bolivia (Plurinational State of)    2001             77
+365                                              Brazil    2001             93
+465                                              Canada    2001             88
+509                                               Chile    2001             97
+532                                            Colombia    2001             55
+583                                          Costa Rica    2001             89
+631                                                Cuba    2001             99
+651                                              Cyprus    2001             32
+704                                             Denmark    2001             95
+755                                  Dominican Republic    2001             20
+864                                                Fiji    2001             98
+886                                             Finland    2001             96
+913                                              France    2001             86
+943                                              Gambia    2001             87
+973                                             Germany    2001             94
+1018                                             Greece    2001             87
+1043                                            Grenada    2001             96
+1096                                             Guyana    2001             85
+1120                                           Honduras    2001             95
+1139                                            Hungary    2001             99
+                                                ...     ...            ...
+1575                                              Malta    2001             84
+1598                                   Marshall Islands    2001             45
+1640                                             Mexico    2001             97
+1659                   Micronesia (Federated States of)    2001             73
+1679                                             Monaco    2001             99
+1781                                        Netherlands    2001             96
+1803                                        New Zealand    2001             90
+1825                                          Nicaragua    2001             87
+1862                                               Niue    2001             99
+1881                                             Norway    2001             93
+1931                                              Palau    2001             93
+1952                                             Panama    2001             99
+1996                                               Peru    2001             38
+2040                                           Portugal    2001             90
+2061                                              Qatar    2001             93
+2123                              Saint Kitts and Nevis    2001             99
+2186                                         San Marino    2001             95
+2294                                           Slovakia    2001             70
+2317                                           Slovenia    2001             93
+2352                                       South Africa    2001             71
+2375                                              Spain    2001             96
+2430                                             Sweden    2001             98
+2458                                        Switzerland    2001             91
+2479                               Syrian Arab Republic    2001             84
+2550                                Trinidad and Tobago    2001             85
+2643                               United Arab Emirates    2001             92
+2663  United Kingdom of Great Britain and Northern I...    2001             91
+2699                           United States of America    2001             93
+2723                                            Uruguay    2001             90
+2763                 Venezuela (Bolivarian Republic of)    2001             34
+
+[69 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2002 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+47                                              Andorra    2002             92
+80                                  Antigua and Barbuda    2002             97
+98                                            Argentina    2002             93
+128                                           Australia    2002             95
+150                                             Austria    2002             82
+178                                             Bahamas    2002             94
+198                                             Bahrain    2002             98
+229                                            Barbados    2002             66
+257                                             Belgium    2002             86
+283                                              Belize    2002             89
+322                    Bolivia (Plurinational State of)    2002             77
+364                                              Brazil    2002             93
+383                                   Brunei Darussalam    2002             94
+464                                              Canada    2002             88
+508                                               Chile    2002             97
+531                                            Colombia    2002             69
+582                                          Costa Rica    2002             93
+613                                             Croatia    2002             79
+630                                                Cuba    2002             99
+650                                              Cyprus    2002             32
+669                                             Czechia    2002             95
+703                                             Denmark    2002             96
+754                                  Dominican Republic    2002             43
+793                                         El Salvador    2002             81
+863                                                Fiji    2002             99
+885                                             Finland    2002             96
+912                                              France    2002             87
+942                                              Gambia    2002             89
+972                                             Germany    2002             94
+1000                                              Ghana    2002             80
+                                                ...     ...            ...
+1780                                        Netherlands    2002             96
+1802                                        New Zealand    2002             88
+1824                                          Nicaragua    2002             85
+1861                                               Niue    2002             99
+1880                                             Norway    2002             95
+1903                                               Oman    2002             97
+1930                                              Palau    2002             90
+1951                                             Panama    2002             99
+1995                                               Peru    2002             40
+2039                                           Portugal    2002             94
+2060                                              Qatar    2002             96
+2105                                             Rwanda    2002             88
+2122                              Saint Kitts and Nevis    2002             95
+2141                                        Saint Lucia    2002             14
+2185                                         San Marino    2002             95
+2222                                       Saudi Arabia    2002             95
+2293                                           Slovakia    2002             92
+2316                                           Slovenia    2002             93
+2351                                       South Africa    2002             70
+2374                                              Spain    2002             97
+2429                                             Sweden    2002             98
+2457                                        Switzerland    2002             91
+2478                               Syrian Arab Republic    2002             83
+2549                                Trinidad and Tobago    2002             59
+2612                                             Uganda    2002             29
+2642                               United Arab Emirates    2002             94
+2662  United Kingdom of Great Britain and Northern I...    2002             91
+2698                           United States of America    2002             93
+2722                                            Uruguay    2002             95
+2762                 Venezuela (Bolivarian Republic of)    2002             59
+
+[81 rows x 3 columns]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+ 50 51 52 53 54 55 56 57 58 59]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+ 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+ 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74
+ 75 76 77 78 79 80]
