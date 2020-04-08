@@ -1,0 +1,359 @@
+#******************* Question - :plot-3: 8-11 (2003-2006) :  ********************
+
+
+df1 = df[df.Period == 2003]
+print("\n\n--------------[ OUTPUT for 2003 ]----------------------\n\n")
+print(df1[['Location','Period','First Tooltip']])
+
+df2 = df[df.Period == 2004]
+print("\n\n--------------[ OUTPUT for 2004 ]----------------------\n\n")
+print(df2[['Location','Period','First Tooltip']])
+
+df3 = df[df.Period == 2005]
+print("\n\n--------------[ OUTPUT for 2005 ]----------------------\n\n")
+print(df3[['Location','Period','First Tooltip']])
+
+df4 = df[df.Period == 2006]
+print("\n\n--------------[ OUTPUT for 2006 ]----------------------\n\n")
+print(df4[['Location','Period','First Tooltip']])
+
+i = np.arange(len(df1['Location']))
+print(i)
+
+i1 = np.arange(len(df2['Location']))
+print(i1)
+
+i2 = np.arange(len(df3['Location']))
+print(i2)
+
+i3 = np.arange(len(df4['Location']))
+print(i3)
+
+#--------------- plot ----------------------
+
+plt.title('Question - : slot-3 : 2003-2006')
+plt.xlabel("Country sl. no --- >")
+plt.ylabel("Number(%) --- >")
+
+plt.plot(i,df1['First Tooltip'],
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] 2003")
+
+plt.plot(i1,df2['First Tooltip'],
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] 2004")
+
+plt.plot(i2,df3['First Tooltip'],
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] 2005")
+
+plt.plot(i3,df4['First Tooltip'],
+            marker='o',
+            markersize=10,
+            linestyle='dashed',
+            label="[4] 2006")
+
+plt.legend()
+plt.show()
+
+
+--------------[ OUTPUT for 2003 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+46                                              Andorra    2003             91
+79                                  Antigua and Barbuda    2003             97
+97                                            Argentina    2003             96
+127                                           Australia    2003             95
+149                                             Austria    2003             84
+177                                             Bahamas    2003             93
+197                                             Bahrain    2003             97
+228                                            Barbados    2003             88
+256                                             Belgium    2003             87
+282                                              Belize    2003             96
+321                    Bolivia (Plurinational State of)    2003             80
+363                                              Brazil    2003             94
+382                                   Brunei Darussalam    2003             92
+463                                              Canada    2003             88
+507                                               Chile    2003             96
+530                                            Colombia    2003             93
+581                                          Costa Rica    2003             87
+612                                             Croatia    2003             95
+629                                                Cuba    2003             99
+649                                              Cyprus    2003             58
+668                                             Czechia    2003             97
+702                                             Denmark    2003             96
+753                                  Dominican Republic    2003             75
+771                                             Ecuador    2003             54
+792                                         El Salvador    2003             94
+862                                                Fiji    2003             99
+884                                             Finland    2003             96
+911                                              France    2003             87
+941                                              Gambia    2003             91
+971                                             Germany    2003             93
+                                                ...     ...            ...
+1860                                               Niue    2003             99
+1879                                             Norway    2003             94
+1902                                               Oman    2003             99
+1929                                              Palau    2003             94
+1950                                             Panama    2003             98
+1978                                           Paraguay    2003             86
+1994                                               Peru    2003             41
+2038                                           Portugal    2003             99
+2059                                              Qatar    2003             92
+2104                                             Rwanda    2003             96
+2121                              Saint Kitts and Nevis    2003             99
+2140                                        Saint Lucia    2003             84
+2157                   Saint Vincent and the Grenadines    2003             27
+2184                                         San Marino    2003             94
+2221                                       Saudi Arabia    2003             95
+2292                                           Slovakia    2003             99
+2315                                           Slovenia    2003             95
+2350                                       South Africa    2003             69
+2373                                              Spain    2003             98
+2428                                             Sweden    2003             99
+2456                                        Switzerland    2003             91
+2477                               Syrian Arab Republic    2003             82
+2548                                Trinidad and Tobago    2003             92
+2564                                            Tunisia    2003             96
+2611                                             Uganda    2003             44
+2641                               United Arab Emirates    2003             94
+2661  United Kingdom of Great Britain and Northern I...    2003             91
+2697                           United States of America    2003             94
+2721                                            Uruguay    2003             91
+2761                 Venezuela (Bolivarian Republic of)    2003             54
+
+[87 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2004 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+45                                              Andorra    2004             95
+78                                  Antigua and Barbuda    2004             97
+96                                            Argentina    2004             98
+126                                           Australia    2004             95
+148                                             Austria    2004             83
+176                                             Bahamas    2004             93
+196                                             Bahrain    2004             98
+227                                            Barbados    2004             93
+255                                             Belgium    2004             87
+281                                              Belize    2004             97
+320                    Bolivia (Plurinational State of)    2004             84
+339                              Bosnia and Herzegovina    2004             49
+362                                              Brazil    2004             95
+381                                   Brunei Darussalam    2004             92
+420                                             Burundi    2004             83
+462                                              Canada    2004             91
+506                                               Chile    2004             93
+529                                            Colombia    2004             89
+580                                          Costa Rica    2004             90
+611                                             Croatia    2004             95
+628                                                Cuba    2004             99
+648                                              Cyprus    2004             58
+667                                             Czechia    2004             98
+701                                             Denmark    2004             95
+752                                  Dominican Republic    2004             80
+770                                             Ecuador    2004             86
+791                                         El Salvador    2004             90
+824                                             Estonia    2004             27
+861                                                Fiji    2004             99
+883                                             Finland    2004             96
+                                                ...     ...            ...
+1878                                             Norway    2004             94
+1901                                               Oman    2004             99
+1928                                              Palau    2004             98
+1949                                             Panama    2004             95
+1977                                           Paraguay    2004             92
+1993                                               Peru    2004             96
+2037                                           Portugal    2004             95
+2058                                              Qatar    2004             96
+2103                                             Rwanda    2004             89
+2120                              Saint Kitts and Nevis    2004             95
+2139                                        Saint Lucia    2004             91
+2156                   Saint Vincent and the Grenadines    2004             99
+2183                                         San Marino    2004             93
+2220                                       Saudi Arabia    2004             96
+2291                                           Slovakia    2004             99
+2314                                           Slovenia    2004             94
+2349                                       South Africa    2004             75
+2372                                              Spain    2004             97
+2427                                             Sweden    2004             99
+2455                                        Switzerland    2004             91
+2476                               Syrian Arab Republic    2004             81
+2547                                Trinidad and Tobago    2004             94
+2563                                            Tunisia    2004             97
+2610                                             Uganda    2004             62
+2640                               United Arab Emirates    2004             94
+2660  United Kingdom of Great Britain and Northern I...    2004             92
+2696                           United States of America    2004             94
+2720                                            Uruguay    2004             94
+2760                 Venezuela (Bolivarian Republic of)    2004             60
+2802                                             Zambia    2004             83
+
+[92 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2005 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+44                                              Andorra    2005             97
+77                                  Antigua and Barbuda    2005             99
+95                                            Argentina    2005             98
+125                                           Australia    2005             94
+147                                             Austria    2005             86
+175                                             Bahamas    2005             93
+195                                             Bahrain    2005             98
+226                                            Barbados    2005             92
+254                                             Belgium    2005             95
+280                                              Belize    2005             96
+298                                               Benin    2005             35
+319                    Bolivia (Plurinational State of)    2005             85
+338                              Bosnia and Herzegovina    2005             50
+361                                              Brazil    2005             96
+380                                   Brunei Darussalam    2005             94
+419                                             Burundi    2005             87
+461                                              Canada    2005             93
+505                                               Chile    2005             91
+528                                            Colombia    2005             93
+579                                          Costa Rica    2005             89
+610                                             Croatia    2005             96
+627                                                Cuba    2005             94
+647                                              Cyprus    2005             58
+666                                             Czechia    2005             97
+700                                             Denmark    2005             93
+751                                  Dominican Republic    2005             87
+769                                             Ecuador    2005             90
+790                                         El Salvador    2005             89
+823                                             Estonia    2005             37
+860                                                Fiji    2005             99
+                                                ...     ...            ...
+1992                                               Peru    2005             94
+2022                                             Poland    2005             22
+2036                                           Portugal    2005             93
+2057                                              Qatar    2005             97
+2102                                             Rwanda    2005             95
+2119                              Saint Kitts and Nevis    2005             99
+2138                                        Saint Lucia    2005             95
+2155                   Saint Vincent and the Grenadines    2005             99
+2182                                         San Marino    2005             93
+2219                                       Saudi Arabia    2005             96
+2236                                            Senegal    2005             18
+2290                                           Slovakia    2005             99
+2313                                           Slovenia    2005             95
+2348                                       South Africa    2005             82
+2371                                              Spain    2005             96
+2412                                           Suriname    2005             83
+2426                                             Sweden    2005             98
+2454                                        Switzerland    2005             93
+2475                               Syrian Arab Republic    2005             80
+2532                                              Tonga    2005             82
+2546                                Trinidad and Tobago    2005             95
+2562                                            Tunisia    2005             80
+2609                                             Uganda    2005             64
+2639                               United Arab Emirates    2005             94
+2659  United Kingdom of Great Britain and Northern I...    2005             91
+2695                           United States of America    2005             94
+2719                                            Uruguay    2005             96
+2759                 Venezuela (Bolivarian Republic of)    2005             87
+2787                                              Yemen    2005             43
+2801                                             Zambia    2005             82
+
+[101 rows x 3 columns]
+
+
+--------------[ OUTPUT for 2006 ]----------------------
+
+
+                                               Location  Period  First Tooltip
+43                                              Andorra    2006             93
+76                                  Antigua and Barbuda    2006             99
+94                                            Argentina    2006             91
+124                                           Australia    2006             95
+146                                             Austria    2006             83
+174                                             Bahamas    2006             95
+194                                             Bahrain    2006             98
+225                                            Barbados    2006             84
+253                                             Belgium    2006             98
+279                                              Belize    2006             98
+297                                               Benin    2006             74
+318                    Bolivia (Plurinational State of)    2006             83
+337                              Bosnia and Herzegovina    2006             82
+360                                              Brazil    2006             97
+379                                   Brunei Darussalam    2006             97
+405                                        Burkina Faso    2006             76
+418                                             Burundi    2006             92
+460                                              Canada    2006             95
+504                                               Chile    2006             94
+527                                            Colombia    2006             93
+578                                          Costa Rica    2006             88
+609                                             Croatia    2006             96
+626                                                Cuba    2006             97
+646                                              Cyprus    2006             90
+665                                             Czechia    2006             97
+699                                             Denmark    2006             93
+737                                            Dominica    2006              7
+750                                  Dominican Republic    2006             80
+768                                             Ecuador    2006             94
+789                                         El Salvador    2006             96
+                                                ...     ...            ...
+2021                                             Poland    2006             31
+2035                                           Portugal    2006             97
+2056                                              Qatar    2006             96
+2101                                             Rwanda    2006             99
+2118                              Saint Kitts and Nevis    2006             99
+2137                                        Saint Lucia    2006             85
+2154                   Saint Vincent and the Grenadines    2006             99
+2181                                         San Marino    2006             91
+2218                                       Saudi Arabia    2006             96
+2235                                            Senegal    2006             89
+2249                                             Serbia    2006             42
+2289                                           Slovakia    2006             99
+2312                                           Slovenia    2006             97
+2347                                       South Africa    2006             84
+2370                                              Spain    2006             98
+2411                                           Suriname    2006             84
+2425                                             Sweden    2006             98
+2453                                        Switzerland    2006             93
+2474                               Syrian Arab Republic    2006             80
+2531                                              Tonga    2006             82
+2545                                Trinidad and Tobago    2006             89
+2608                                             Uganda    2006             64
+2625                                            Ukraine    2006             11
+2638                               United Arab Emirates    2006             92
+2658  United Kingdom of Great Britain and Northern I...    2006             92
+2694                           United States of America    2006             93
+2718                                            Uruguay    2006             95
+2758                 Venezuela (Bolivarian Republic of)    2006             71
+2786                                              Yemen    2006             73
+2800                                             Zambia    2006             81
+
+[106 rows x 3 columns]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+ 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74
+ 75 76 77 78 79 80 81 82 83 84 85 86]
+[ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+ 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49
+ 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74
+ 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100]
+[  0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17
+  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35
+  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53
+  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88  89
+  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105]
